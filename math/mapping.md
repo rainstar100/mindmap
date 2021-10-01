@@ -1,6 +1,6 @@
 # Mapping
 
-## Define
+## Concept
 
 - set:x,y
   

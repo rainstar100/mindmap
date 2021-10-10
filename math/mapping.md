@@ -2,24 +2,24 @@
 
 ## Concept
 
-- set:x,y
-  
-- principle: f
+- $ set: \mathbf{X},\mathbf{Y} $
+ $ \mathbf{X}=\{x \in \neg \emptyset\} $
+ $ \mathbf{Y}=\{y \in \neg \emptyset\} $
 
-- f: x->y
+- principle:  $ f: x \rightarrow y $
   
 ## Classification(by)
 
 ### Set
 
 - Functional Aanalysis
-   $\neg \emptyset \ -> \mathbb{R} $
+   $\neg \emptyset \ \rightarrow \mathbb{R} $
 
 - Transformation
-  $\neg \emptyset \ -> \neg \emptyset $
+  $\neg \emptyset \ \rightarrow \neg \emptyset $
 
 - Function
-  $ \mathbb{R} -> \mathbb{R} $
+  $ \mathbb{R} \rightarrow \mathbb{R} $
 
 ### Principle
 

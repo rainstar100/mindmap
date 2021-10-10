@@ -4,7 +4,13 @@
 
 ### Set
 
-- $ X \mathbb{R} $
+- $ \mathbb{D} \in \mathbb{R} $
+
+### Principle
+
+- $ f $
+
+### 
 
 ### Principle
 

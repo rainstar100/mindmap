@@ -6,6 +6,7 @@
 
 - $$ \forall \epsilon ,\epsilon>0 $$
 --
+
 - $$\lim_{n \to +\infty}x_n = a $$
 
 - $$ \mid x_n - a \mid < \epsilon $$

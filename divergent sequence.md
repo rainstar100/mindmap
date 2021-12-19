@@ -3,7 +3,7 @@
 ## Contridiction
 
 - $ x_n $ is convergent
-- the convergent sequences of the limit is only one
+- according to the limit of the convergent sequences is unique, we consider to find out the unique limit(a)
 
 - $$ \lim_{n \to +\infty} x_n=a $$
 
@@ -26,6 +26,6 @@ when $ \epsilon=\frac{1}{2} $
   
 - $$ \frac{1}{2}<a<\frac{3}{2} $$
 
-limit a is not only ,$x_n$ hasn't the character of convergent limit, 
+so limit a is not only ,which confict with the limit of convergent sequence is only
 
-So x_n is divergent.
+So it is false that $x_n$ is convergent, So it is disvergent

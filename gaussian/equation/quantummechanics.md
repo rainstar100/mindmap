@@ -31,3 +31,13 @@
 - 必须连续，而且必须有一阶微商连续(单调函数)，如果不连续，不能积分，求概率
 - 平方积分值，必须有限
 
+# 基本假设二
+对于质量为m,具有确定能量为E的粒子，其运动状态波函数$\psi$满足定态薛定谔方程
+$$ [-\frac{h^2}{8\pi^2m}(\frac{\partial^2 }{\partial x^2}+\frac{\partial^2 }{\partial y^2}+\frac{\partial^2 }{\partial z^2})+V]\psi(x,y,z)=E\psi(x,y,z)$$
+
+- V势能
+- 动能$ -\frac{h^2}{8\pi^2m}(\frac{\partial^2 }{\partial x^2}+\frac{\partial^2 }{\partial y^2}+\frac{\partial^2 }{\partial z^2}) $
+
+#方程求解
+- 求出波函数约束条件(单值，连续，平法可积)数学解
+- 求出符合模型条件的数学解

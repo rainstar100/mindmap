@@ -1,0 +1,21 @@
+%chk=D:\mindmap\gaussian\calculate\ch3n2_idea_bondlength\energy.chk
+%nprocshared=4
+%mem=1GB
+# apfd/6-311+g(2d,p) pop=full geom=connectivity int=ultrafine
+
+Energy Calculation(GC)
+
+0 1
+ N                  0.00000000   -0.00000000    1.35936858
+ N                  0.00000000   -0.00000000    0.12736858
+ C                  0.00000000   -0.00000000   -1.16623142
+ H                  0.00000000   -0.92468743   -1.70488576
+ H                 -0.00000000    0.92468743   -1.70488576
+
+ 1 2 2.0
+ 2 3 2.0
+ 3 4 1.0 5 1.0
+ 4
+ 5
+
+

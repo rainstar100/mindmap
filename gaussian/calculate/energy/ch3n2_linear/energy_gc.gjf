@@ -1,0 +1,24 @@
+%chk=D:\mindmap\gaussian\check\energy_gc.chk
+%nprocshared=4
+%mem=1GB
+# apfd/6-311+g(2d,p) geom=connectivity pop=full int=ultrafine
+
+Energy Calculation(GC)
+
+0 1
+ H                 -0.06930332   -1.68318440    0.92571539
+ H                 -0.06930332   -1.68318440   -0.92571539
+ N                  0.00754899    0.11933577    0.00000000
+ N                 -0.00801458    1.35123746    0.00000000
+ C                  0.02364430   -1.15460730    0.00000000
+
+ 1 5 1.0
+ 2 5 1.0
+ 3 4 2.0 5 2.0
+ 4
+ 5
+
+
+
+ 
+

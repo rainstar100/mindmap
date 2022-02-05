@@ -1,0 +1,20 @@
+%chk=D:\mindmap\gaussian\calculate\ch3n2_120degree\energy.chk
+%nprocshared=4
+%mem=1GB
+# apfd/6-311+g(2d,p) geom=connectivity pop=full int=ultrafine
+
+Energy Calculation(GC)
+
+0 1
+C                 -0.00250073   -1.06108316   -0.13168374
+H                  0.91565885   -1.53039854   -0.41738652
+H                 -0.93543418   -1.53617464   -0.35264358
+N                  0.01148929    0.07870685    0.47994030
+N                 -0.00652076    1.26887489   -0.25706422
+
+1 2 1.0 3 1.0 4 2.0
+2
+3
+4 5 2.0
+5
+

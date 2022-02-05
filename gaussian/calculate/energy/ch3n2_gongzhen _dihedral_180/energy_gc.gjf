@@ -1,0 +1,20 @@
+%chk=D:\mindmap\gaussian\calculate\ch3n2_gongzhen _dihedral_180\energy.chk
+%nprocshared=4
+%mem=1GB
+# apfd/6-311+g(2d,p) pop=full geom=connectivity int=ultrafine
+
+Energy Calculation(GC)
+
+0 1
+ N                  0.12321429   -0.11517606   -0.00798403
+ N                  1.33494678   -0.20407055   -0.01557091
+ C                 -1.15199658   -0.02161901    0.00000000
+ H                 -1.68233161    0.06302740   -0.92552592
+ H                 -1.69284341   -0.02723700    0.92329391
+
+ 1 2 1.5 3 1.5
+ 2
+ 3 4 1.0 5 1.0
+ 4
+ 5
+

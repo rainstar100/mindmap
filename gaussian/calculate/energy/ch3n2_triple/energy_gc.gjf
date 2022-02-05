@@ -1,0 +1,21 @@
+%chk=D:\mindmap\gaussian\calculate\ch3n2_triple\energy.chk
+%nprocshared=4
+%mem=1GB
+# apfd/6-311+g(2d,p) geom=connectivity pop=full int=ultrafine
+
+Energy Calculation(GC)
+
+0 1
+ N                 -0.18462237   -0.23464351    0.00000000
+ N                 -0.34108893   -1.31525793    0.00000000
+ C                  0.03178327    1.25996313    0.00000000
+ H                 -0.83504338    1.95747507    0.00000000
+ H                  1.02867475    1.64944138    0.00000000
+
+ 1 2 3.0 3 1.0
+ 2
+ 3 4 1.0 5 1.0
+ 4
+ 5
+
+ 

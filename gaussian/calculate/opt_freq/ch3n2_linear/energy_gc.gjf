@@ -1,0 +1,20 @@
+%chk=D:\mindmap\gaussian\calculate\opt_freq\ch3n2_linear\energy_gc.chk
+%nprocshared=4
+%mem=1GB
+# apfd/6-311+g(2d,p) pop=full geom=connectivity int=ultrafine
+
+Energy Calculation(GC)
+
+0 1
+ H                 -0.00287500   -1.63641600    0.95382400
+ H                 -0.00287500   -1.63641600   -0.95382400
+ N                  0.00000000    0.15457200    0.00000000
+ N                  0.00166500    1.28529400    0.00000000
+ C                 -0.00098500   -1.13437200    0.00000000
+
+ 1 5 1.0
+ 2 5 1.0
+ 3 4 3.0 5 2.0
+ 4
+ 5
+

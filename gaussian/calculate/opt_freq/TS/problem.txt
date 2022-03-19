@@ -1,0 +1,2 @@
+error 103 ,有直线角
+errror9999， 不收敛，加上noeigen

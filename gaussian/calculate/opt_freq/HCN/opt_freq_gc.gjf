@@ -1,7 +1,7 @@
 %chk=D:\mindmap\gaussian\calculate\opt_freq\ch3cocl\ch3cocl.chk
 %nprocshared=4
 %mem=1GB
-# opt freq apfd/6-311+g(2d,p) pop=full  int=ultrafine
+# opt freq pm6
 
 opt freq(GC)
 

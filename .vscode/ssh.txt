@@ -1,3 +1,5 @@
 ssh-agent -s
 ssh-agent bash
 ssh-add ~/.ssh/ssh
+#linux
+ssh-add /mnt/c/Users/23122/.ssh/ssh

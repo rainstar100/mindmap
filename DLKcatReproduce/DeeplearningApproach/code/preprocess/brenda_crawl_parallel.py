@@ -2,7 +2,7 @@ from tools.decorator import timetry
 from tools.tool import response_to_txt
 import requests
 @timetry
-def crawl(ecNumber='1.1.1.1'):
+def crawl(ecNumber):
     headers = {
         'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
         'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
@@ -23,11 +23,12 @@ def crawl(ecNumber='1.1.1.1'):
     params= {'ecno': ecNumber,}
     print(params)
     response=requests.get('https://www.brenda-enzymes.org/enzyme.php', params=params, headers=headers)
+    output_path='./Data/database/brenda_raw/KCAT/'
     file_name = output_path+'EC' + ecNumber+ '_KCAT' +'.txt'
     response_to_txt(file_name,response)
-    output_path='./data/database/brenda_raw/KCAT/'
+
     return response
 
 if __name__=='__main__':
-    response=crawl()
+    response=crawl('1.1.1.1')
     print(response.status_code)

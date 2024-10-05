@@ -8,7 +8,8 @@ def devideIterator(object,length):
             params.append(temp)
             temp=[]
         index=index+1
-    params.append(temp)  
+    if temp:
+        params.append(temp)  
     return params
 
 def response_to_txt(file_name,response):
@@ -16,3 +17,8 @@ def response_to_txt(file_name,response):
     with open(file_name, 'w',encoding='utf-8') as f: 
         f.write(response.text)
     print('saved')
+
+if __name__=='__main__':
+    #test devideIteratro
+    a=devideIterator([1,2],1)
+    print(a)

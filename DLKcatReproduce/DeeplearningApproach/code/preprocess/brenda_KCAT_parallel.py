@@ -14,13 +14,14 @@ input_path='./data/database/brenda_raw/'
 def eclist():
     #read ecNumbers
     df=pd.read_csv(input_path+'brenda_ecNumbers.csv')
-    return df
+    return df.iloc[:,0] #slice on ecNumbers
 
 if __name__ == '__main__' :
     #parallel request
 
-    allEC = eclist() #all params
-    params_pool=devideIterator(allEC.iloc[2373:,0],1)
+    allEC = eclist()[3249:]#all params  if test ,please slice 4-10 ecNumbers
+    Maxnumber_threads=20 # the max number of threads at one time 
+    params_pool=devideIterator(allEC,Maxnumber_threads)
 
     for params in params_pool:
         parallel(crawl,params)

@@ -13,12 +13,12 @@ def timetry(func):
                 execution_time = end_time - start_time  # 计算执行时间  
                 print(f"Function {func.__name__} executed in {execution_time:.4f} seconds")    
                 return result  # 返回函数的结果  
-            except:
+            except Exception as e:
                 #raise
-                with open('./log/log.txt','a') as f:
-                    f.write(str(*args)+','+datetime.now().strftime('%Y-%m-%d %H:%M:%S')+'\n')
+                print(e,'---try',succes)
+                # with open('./log/log.txt','a') as f:
+                #     f.write(str(*args)+','+datetime.now().strftime('%Y-%m-%d %H:%M:%S')+','+e_str+'\n') #bug
                 time.sleep(1)
                 succes += 1
-                print('try',succes)
     return wrapper  
 ########################################################

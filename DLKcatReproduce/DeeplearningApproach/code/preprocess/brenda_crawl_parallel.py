@@ -1,4 +1,5 @@
 from tools.decorator import timetry
+from tools.tool import response_to_txt
 import requests
 @timetry
 def crawl(ecNumber='1.1.1.1'):
@@ -25,6 +26,7 @@ def crawl(ecNumber='1.1.1.1'):
     file_name = output_path+'EC' + ecNumber+ '_KCAT' +'.txt'
     response_to_txt(file_name,response)
     output_path='./data/database/brenda_raw/KCAT/'
+    return response
 
 if __name__=='__main__':
     response=crawl()

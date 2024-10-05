@@ -11,7 +11,7 @@ output_path='./data/database/brenda_raw/KCAT/'
 df=pd.read_csv(input_path+'brenda_ecNumbers.csv')
 
 ## crawl and save
-for ecNumber in df.iloc[2372:,0]:
+for ecNumber in df.iloc[2417:,0]:
     response=crawl(params = {'ecno':ecNumber,})
     file_name = output_path+'EC' + ecNumber+ '_KCAT' +'.txt'
     response_to_txt(file_name,response)

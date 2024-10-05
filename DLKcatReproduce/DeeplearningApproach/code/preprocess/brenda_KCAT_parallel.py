@@ -20,7 +20,7 @@ if __name__ == '__main__' :
     #parallel request
 
     allEC = eclist() #all params
-    params_pool=devideIterator(allEC.iloc[2372:,0],20)
+    params_pool=devideIterator(allEC.iloc[2373:,0],1)
 
     for params in params_pool:
         parallel(crawl,params)

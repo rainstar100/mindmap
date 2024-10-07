@@ -4,7 +4,7 @@ from tools.decorator import timetry
 from tools.tool import devideIterator
 import numpy as np
 import pandas as pd
-from brenda_crawl_parallel import crawl
+from brenda_crawl_func import crawl
 
 
 #set path of input and output

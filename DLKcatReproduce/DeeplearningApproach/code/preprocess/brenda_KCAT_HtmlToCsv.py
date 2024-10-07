@@ -5,16 +5,23 @@ import os
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
-from tools.parallel import parallel
+from tools.multiprocess import parallel_multiprocess_map
 from tools.decorator import timetry
 
+
+
+
+
+
 #clean data
-@timetry
+#@timetry
 def cleanFile(file_name):
     '''
     read-clean-save
     '''
-
+    # set path 
+    input_path='./Data/database/brenda_raw/KCAT/'
+    output_path='./Data/database/brenda_csv/'
     #read file
     file=input_path+file_name #set filepath
     with open(file,'r',encoding='utf-8') as f:
@@ -43,13 +50,10 @@ def cleanFile(file_name):
 
 if __name__=='__main__':
 
-    # set path 
-    input_path='./Data/database/brenda_raw/KCAT/'
-    output_path='./Data/database/brenda_csv/'
-
     #read the raw data 
     ##Read all BRENDA file names:
-    file_names = os.listdir(input_path)[:1]
+    file_names = os.listdir(input_path)
     #cleanFile(file_names)
-    parallel(cleanFile,file_names)  #munipule threads to cleanHtml
+    number_processes=10
+    parallel_multiprocess_map(cleanFile,file_names,number_processes)  #munipuleprocess to cleanHtml
     

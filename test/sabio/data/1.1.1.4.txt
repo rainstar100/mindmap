@@ -1,0 +1,84 @@
+EntryID	Substrate	EnzymeType	PubMedID	Organism	UniprotID	ECNumber	parameter.type	parameter.associatedSpecies	parameter.startValue	parameter.endValue	parameter.standardDeviation	parameter.unit
+64440	H+;NADH;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64440	H+;NADH;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	kcat				-	-
+64440	H+;NADH;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Km	NADH	1.2E-5		-	M
+64440	H+;NADH;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NADH			-	-
+64441	NADH;Acetoin;H+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Km	Acetoin	9.3E-4		-	M
+64441	NADH;Acetoin;H+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64441	NADH;Acetoin;H+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	Acetoin			-	-
+64441	NADH;Acetoin;H+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	kcat				-	-
+64446	Acetoin;H+;NADPH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Km	NADPH	4.7E-5		-	M
+64446	Acetoin;H+;NADPH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NADPH			-	-
+64446	Acetoin;H+;NADPH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64446	Acetoin;H+;NADPH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	kcat				-	-
+64447	Acetoin;H+;NADPH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	Acetoin			-	-
+64447	Acetoin;H+;NADPH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64447	Acetoin;H+;NADPH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	kcat				-	-
+64447	Acetoin;H+;NADPH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Km	Acetoin	0.00142		-	M
+64452	erythro-2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	kcat				-	-
+64452	erythro-2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	erythro-2,3-Butanediol			-	-
+64452	erythro-2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64452	erythro-2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Km	erythro-2,3-Butanediol	0.0182		-	M
+64453	NAD+;erythro-2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NAD+			-	-
+64453	NAD+;erythro-2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64453	NAD+;erythro-2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	kcat				-	-
+64453	NAD+;erythro-2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Km	NAD+	1.38E-4		-	M
+64454	threo-2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Km	threo-2,3-Butanediol	0.0222		-	M
+64454	threo-2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64454	threo-2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	kcat				-	-
+64454	threo-2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	threo-2,3-Butanediol			-	-
+64455	NAD+;threo-2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	kcat				-	-
+64455	NAD+;threo-2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NAD+			-	-
+64455	NAD+;threo-2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64455	NAD+;threo-2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Km	NAD+	1.45E-4		-	M
+64458	Acetoin;NADH;H+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64458	Acetoin;NADH;H+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	2-Mercaptoethanol	3.5E-6	5.0E-4	-	M
+64458	Acetoin;NADH;H+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Ki	2-Mercaptoethanol	8.2E-5		-	M
+64458	Acetoin;NADH;H+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	Acetoin	0.003		-	M
+64458	Acetoin;NADH;H+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NADH	6.0E-6	8.0E-5	-	M
+64459	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Ki	2-Mercaptoethanol	7.2E-5		-	M
+64459	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64459	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NADH	8.0E-5		-	M
+64459	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	2-Mercaptoethanol	3.5E-6	5.0E-4	-	M
+64459	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	Acetoin	1.0E-4	0.003	-	M
+64464	2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	2-Mercaptoethanol	3.5E-6	5.0E-4	-	M
+64464	2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64464	2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	2,3-Butanediol	0.04		-	M
+64464	2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Ki	2-Mercaptoethanol	5.2E-6		-	M
+64464	2,3-Butanediol;NAD+	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NAD+	1.8E-5	1.8E-4	-	M
+64465	NAD+;2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	2,3-Butanediol	0.004	0.04	-	M
+64465	NAD+;2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	7.0E-5	2.0E-4	-	mg/ml
+64465	NAD+;2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Ki	2-Mercaptoethanol	5.5E-6		-	M
+64465	NAD+;2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Ki	2-Mercaptoethanol	3.5E-6		-	M
+64465	NAD+;2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	2-Mercaptoethanol	3.5E-6	5.0E-4	-	M
+64465	NAD+;2,3-Butanediol	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NAD+	3.0E-4		-	M
+64468	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NAD+	0.0	0.001	-	M
+64468	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	Acetoin	0.0	5.0E-4	-	M
+64468	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NADH	3.0E-5		-	M
+64468	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	1.0E-4		-	mg/ml
+64468	NADH;H+;Acetoin	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Ki	NAD+	3.5E-4		-	M
+64469	Acetoin;H+;NADH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	unknown compound	1.0E-4		-	mg/ml
+64469	Acetoin;H+;NADH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	Ki	NAD+	1.0E-4		-	M
+64469	Acetoin;H+;NADH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NAD+	0.0	0.001	-	M
+64469	Acetoin;H+;NADH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	Acetoin	5.0E-4		-	M
+64469	Acetoin;H+;NADH	wildtype	6378632	Cupriavidus necator	Q0KDL6	1.1.1.4	concentration	NADH	0.0	3.0E-5	-	M
+64662	NAD+;(R,R)-Butane-2,3-diol	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	concentration	NAD+	0.005		-	M
+64662	NAD+;(R,R)-Butane-2,3-diol	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	Km	(R,R)-Butane-2,3-diol	0.014		5E-3	M
+64662	NAD+;(R,R)-Butane-2,3-diol	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	kcat		1300.0		2.166667E1	s^(-1)
+64662	NAD+;(R,R)-Butane-2,3-diol	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	kcat/Km	(R,R)-Butane-2,3-diol	93333.33		3.333333E4	M^(-1)*s^(-1)
+64663	(R,R)-Butane-2,3-diol;NAD+	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	Km	NAD+	5.5E-4		3E-5	M
+64663	(R,R)-Butane-2,3-diol;NAD+	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	concentration	(R,R)-Butane-2,3-diol	0.12		-	M
+64664	H+;NADH;Acetoin	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	kcat/Km	Acetoin	361666.7		4.333333E4	M^(-1)*s^(-1)
+64664	H+;NADH;Acetoin	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	kcat		1633.333		6.666667E1	s^(-1)
+64664	H+;NADH;Acetoin	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	concentration	NADH	2.0E-4		-	M
+64664	H+;NADH;Acetoin	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	Km	Acetoin	0.0045		5E-4	M
+64665	NADH;H+;Acetoin	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	Km	NADH	5.5E-5		5E-6	M
+64665	NADH;H+;Acetoin	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	concentration	Acetoin	0.05		-	M
+64666	NAD+;erythro-2,3-Butanediol	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	kcat		766.6667		3.333333E1	s^(-1)
+64666	NAD+;erythro-2,3-Butanediol	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	Km	erythro-2,3-Butanediol	0.065		9E-3	M
+64666	NAD+;erythro-2,3-Butanediol	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	kcat/Km	erythro-2,3-Butanediol	11666.67		1.666667E3	M^(-1)*s^(-1)
+64666	NAD+;erythro-2,3-Butanediol	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	concentration	NAD+	0.005		-	M
+64667	1,2-Butanediol;NAD+	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	Km	1,2-Butanediol	0.057		7E-3	M
+64667	1,2-Butanediol;NAD+	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	kcat		606.6667		1.333333E1	s^(-1)
+64667	1,2-Butanediol;NAD+	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	kcat/Km	1,2-Butanediol	10666.67		1.333333E3	M^(-1)*s^(-1)
+64667	1,2-Butanediol;NAD+	wildtype	10938079	Saccharomyces cerevisiae	P39714	1.1.1.4	concentration	NAD+	0.005		-	M

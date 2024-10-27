@@ -1,0 +1,1 @@
+EntryID	Substrate	EnzymeType	PubMedID	Organism	UniprotID	ECNumber	parameter.type	parameter.associatedSpecies	parameter.startValue	parameter.endValue	parameter.standardDeviation	parameter.unit

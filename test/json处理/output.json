@@ -1,0 +1,32 @@
+[
+{
+    "name": "Bob",
+    "age": 25,
+    "city": "San Francisco",
+    "skills": [
+        "JavaScript",
+        "React",
+        "Node.js"
+    ]
+},
+{
+    "name": "Bob",
+    "age": 25,
+    "city": "San Francisco",
+    "skills": [
+        "JavaScript",
+        "React",
+        "Node.js"
+    ]
+},
+{
+    "name": "Bob",
+    "age": 25,
+    "city": "San Francisco",
+    "skills": [
+        "JavaScript",
+        "React",
+        "Node.js"
+    ]
+}
+]

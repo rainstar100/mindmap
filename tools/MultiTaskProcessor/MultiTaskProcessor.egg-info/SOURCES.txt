@@ -1,0 +1,9 @@
+README.md
+setup.py
+MultiTaskProcessor/__init__.py
+MultiTaskProcessor/processor.py
+MultiTaskProcessor.egg-info/PKG-INFO
+MultiTaskProcessor.egg-info/SOURCES.txt
+MultiTaskProcessor.egg-info/dependency_links.txt
+MultiTaskProcessor.egg-info/top_level.txt
+tests/test.py

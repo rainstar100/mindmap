@@ -1,0 +1,9 @@
+file=open('./文件读写/aa.txt','r')
+content=file.read()
+file.close()
+file=open('./文件读写/aa.txt','w')
+print(content)
+new_content=content[:-2]
+print(new_content)
+file.write(new_content)
+file.close()

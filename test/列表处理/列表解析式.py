@@ -10,6 +10,9 @@
 # #
 
 a=[1,2,3,4,5]
+b=[{'1':'aa'},{'12':'baa'}]
+print(b)
+print(type(str(b)))
 b=[]
 print([b.append(i) for i in a ])  #返回[none,none,none,none] bug!!!!!!!! 在列表的推导过程中添加元素到列表是一个迭代过程，不是列表推导式
 ##列表推导式与for循环对比

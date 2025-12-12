@@ -1,0 +1,9 @@
+2025-03-01 13:58:54,778 - console_file - WARNING - This is a warning message
+2025-03-01 13:58:54,781 - console_file - ERROR - This is an error message
+2025-03-01 13:58:54,783 - console_file - CRITICAL - This is a critical message
+2025-03-01 13:59:03,142 - console_file - WARNING - This is a warning message
+2025-03-01 13:59:03,144 - console_file - ERROR - This is an error message
+2025-03-01 13:59:03,146 - console_file - CRITICAL - This is a critical message
+2025-03-01 14:09:33,888 - console_file - WARNING - This is a warning message
+2025-03-01 14:09:33,891 - console_file - ERROR - This is an error message
+2025-03-01 14:09:33,893 - console_file - CRITICAL - This is a critical message

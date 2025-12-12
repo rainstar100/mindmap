@@ -49,6 +49,7 @@ class MultiThreadTaskProcessor:
             except Exception as e:
                 # add exception to exception queue
                 self.exception_queue.put((task, e))
+                print(f"task {task} failed: {e}")
             finally:
                 self.task_queue.task_done()
 

@@ -1,17 +1,18 @@
 
 
 import pandas as pd
-
-import matplotlib.dates as mdates
-
 from pathlib import Path
 from scipy import stats
 import numpy as np
+import os
+from datetime import datetime
+
+
 
 # tool,func
 def read_stocklist_fromtdx():
     folder_path = Path('d:/方正证券/小方/vipdoc/')
-    stocklist = [p.stem for p in folder_path.glob('*/lday/*.day') if not p.stem.lower().startswith('bj')]
+    stocklist = [p.stem[2:] for p in folder_path.glob('*/lday/*.day') if not p.stem.lower().startswith('bj')]
     return stocklist
 
 
@@ -44,11 +45,11 @@ def momentum_score(ts) :
     score=annualized_slope*(r_value**2)
     return score
 
-def main():
+def head(num=20):
     stocklist = read_stocklist_fromtdx()
     scores = {}
     for stock_code in stocklist:
-        dataname = read_tdxfile(stock_code[2:])
+        dataname = read_tdxfile(stock_code)
         if dataname is not None:
             ts = get_ts(dataname)
             score = momentum_score(ts)
@@ -56,7 +57,35 @@ def main():
             print(f'Stock code: {stock_code}, Momentum Score: {score:.2f}')
         else:
             print(f"Data for stock code {stock_code} could not be read.")
-    return sorted(scores,key=scores.get,reverse=True)[:20]
+    return sorted(scores,key=scores.get,reverse=True)[:num]
+
+
+def code_to_tdx(code: str) -> str:
+
+    if code.startswith(('6', '5')):      
+        return '1' + code
+    elif code.startswith(('0', '3')):    
+        return '0' + code
+    elif code.startswith(('8', '4')):    
+        return '2' + code
+    else:
+        return '0' + code  
+def save(head20):
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+
+    tdx_path = r'D:\lh\momentum\blk'  
+    zxg_file = os.path.join(tdx_path, timestamp+'.blk')
+
+    tdx_lines = [code_to_tdx(c) for c in head20]
+    print(f"准备写入 {len(tdx_lines)} 只股票到自选股")
+
+    
+    with open(zxg_file, 'w', encoding='gbk') as f:
+        f.write('\n'.join(tdx_lines))
+
+    print(f"成功写入 {len(tdx_lines)} 只股票到自选股")
+
 
 if __name__ == "__main__":
-    print(main())
+    head20 = head(20)
+    save(head20)

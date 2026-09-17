@@ -87,5 +87,9 @@ def save(head20):
 
 
 if __name__ == "__main__":
-    head20 = head(20)
-    save(head20)
+
+        dataname = read_tdxfile("600163")
+        if dataname is not None:
+            ts = get_ts(dataname)
+            score = momentum_score(ts)
+            print(f' Momentum Score: {score:.2f}')

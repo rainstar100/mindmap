@@ -46,10 +46,8 @@ def momentum_score(stock_code) :
     stock_date = read_tdxfile(stock_code)
     if stock_date is not None:
         ts = get_ts(stock_date)
-        print(f"{stock_code} ts: {ts}")
         x=np.arange(len(ts))
         log_ts=np.log(ts)
-        print(f"{stock_code} log_ts: {log_ts}")
         slop,intercept,r_value,p_value,std_err=stats.linregress(x,log_ts)
         annualized_slope=((1+slop)**252-1)*100 
         score=annualized_slope*(r_value**2)
@@ -101,28 +99,10 @@ def save(results):
         f.write('\n'.join(tdx_lines))
 
     print(f"成功写入 {len(tdx_lines)} 只股票到自选股")
-
-
-def save_to_text(results):
-
-    filtered_results = [x for x in results if x is not None]
-    # sorted_results = sorted(filtered_results, key=lambda x: x['score'], reverse=True)
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-
-    tdx_path = r'D:\lh\momentum\txt'  
-    zxg_file = os.path.join(tdx_path, timestamp+'.txt')
-
-    
-    with open(zxg_file, 'w', encoding='gbk') as f:
-        for item in filtered_results:
-            f.write(f"{item['code']}: {item['score']}\n")
-
-
 def main():
     stocklist = read_stocklist_fromtdx()
     results=cal_score(stocklist,momentum_score)
     save(results)
-    save_to_text(results)
+
 if __name__ == "__main__":
     main()
-    # momentum_score('603013')

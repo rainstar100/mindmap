@@ -31,8 +31,8 @@ def read_tdxfile(stock_code):
             dataname=tdx_reader.get_df(stock_code, market)
             return dataname
         except Exception as e:
-            print('reading error:', e)
-            #return None
+            #print('reading error:', e)
+            return None
 
 
 
@@ -46,18 +46,20 @@ def momentum_score(stock_code) :
     stock_date = read_tdxfile(stock_code)
     if stock_date is not None:
         ts = get_ts(stock_date)
-        print(f"{stock_code} ts: {ts}")
+        #print(f"{stock_code} ts: {ts}")
         x=np.arange(len(ts))
         log_ts=np.log(ts)
-        print(f"{stock_code} log_ts: {log_ts}")
+        #print(f"{stock_code} log_ts: {log_ts}")
         slop,intercept,r_value,p_value,std_err=stats.linregress(x,log_ts)
         annualized_slope=((1+slop)**252-1)*100 
         score=annualized_slope*(r_value**2)
         print(f"{stock_code} score: {score:.2f}")
         return {'code':stock_code, 'score':np.round(score,2)}
-
+    else:
+        print(f"{stock_code} score: read error")
+        return {'code':stock_code, 'score':"read error"}
 def cal_score(stocklist,momentum_score):
-    tasks = stocklist
+    tasks = stocklist # limit to first 10 stocks for testing
     task_handler=momentum_score
     # create processor
     processor = mttp(task_list=tasks, task_handler=task_handler, num_workers=4)
@@ -70,8 +72,8 @@ def cal_score(stocklist,momentum_score):
 
     # get results
     results = processor.get_results()
-    print("results:", results)
-    return results
+    df_results=pd.DataFrame(results)
+    return df_results
 
 
 def code_to_tdx(code: str) -> str:
@@ -84,45 +86,44 @@ def code_to_tdx(code: str) -> str:
         return '2' + code
     else:
         return '0' + code  
-def save(results):
-    filtered_results = [x for x in results if x is not None]
-    sorted_results = sorted(filtered_results, key=lambda x: x['score'], reverse=True)[:20]
 
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+def cal_header(results,num=20):
+    results['score'] = pd.to_numeric(results['score'], errors='coerce').fillna(0) 
+    results=results.sort_values(by='score', ascending=False).reset_index(drop=True)
+    sorted_results=results['code'][:num]
+    return sorted_results
+    
 
-    tdx_path = r'D:\lh\momentum\blk'  
-    zxg_file = os.path.join(tdx_path, timestamp+'.blk')
+def save_to_blk(sorted_results):
+    
 
-    tdx_lines = [code_to_tdx(c['code']) for c in sorted_results]
+    tdx_lines = [code_to_tdx(c) for c in sorted_results]
     print(f"准备写入 {len(tdx_lines)} 只股票到自选股")
 
-    
-    with open(zxg_file, 'w', encoding='gbk') as f:
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    tdx_path = r'D:\lh\momentum\ebk'  
+    zxg_file = os.path.join(tdx_path, timestamp+'.ebk')
+    with open(zxg_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(tdx_lines))
 
     print(f"成功写入 {len(tdx_lines)} 只股票到自选股")
 
 
-def save_to_text(results):
+def save_to_csv(results):
 
-    filtered_results = [x for x in results if x is not None]
-    # sorted_results = sorted(filtered_results, key=lambda x: x['score'], reverse=True)
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-
-    tdx_path = r'D:\lh\momentum\txt'  
-    zxg_file = os.path.join(tdx_path, timestamp+'.txt')
-
+    tdx_path = r'D:\lh\momentum\csv'  
+    zxg_file = os.path.join(tdx_path, timestamp+'.csv')
+    results.to_csv(zxg_file, index=False, encoding='utf-8-sig')
     
-    with open(zxg_file, 'w', encoding='gbk') as f:
-        for item in filtered_results:
-            f.write(f"{item['code']}: {item['score']}\n")
-
 
 def main():
     stocklist = read_stocklist_fromtdx()
     results=cal_score(stocklist,momentum_score)
-    save(results)
-    save_to_text(results)
+    save_to_csv(results)
+    sorted_results=cal_header(results, num=20)
+    save_to_blk(sorted_results)
+
 if __name__ == "__main__":
     main()
     # momentum_score('603013')
